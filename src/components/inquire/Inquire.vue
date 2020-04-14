@@ -1,5 +1,26 @@
 <template>
     <div class="inquire">
-        <h1>This is a inquire page</h1>
+        <publisher></publisher>
     </div>
 </template>
+<script>
+import publisher from "../publisher/publisher"
+export default{
+    name: "inquire",
+    data () {
+        return {
+            
+        }
+    },
+    components: {
+        publisher,
+    }
+}
+</script>
+<style>
+    .inquire{
+        position: relative;
+        top: 48px;
+        left: 0;
+    }
+</style>

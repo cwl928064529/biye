@@ -314,7 +314,8 @@
             position: absolute;
             bottom: 94px;
             right: 36px;
-            font-size: 16px;
+            padding: 2px 4px;
+            font-size: 14px;
             color: #FFF;
             border-radius: 34px;
             background-color: #009999;
