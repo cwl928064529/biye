@@ -1,0 +1,132 @@
+{
+    "enter": {
+      "name": "clcl",
+      "description": "菜鸟学者",
+      "score": 4.2,
+      "signature": "这个人很懒，什么都没留下",
+      "publishNotes": [
+        {
+          "type": 0,
+          "description": "在线支付满28减5"
+        },
+        {
+          "type": 1,
+          "description": "VC无限橙果汁全场8折"
+        },
+        {
+          "type": 2,
+          "description": "单人精彩套餐"
+        },
+        {
+          "type": 3,
+          "description": "该商家支持发票,请下单写好发票抬头"
+        },
+        {
+          "type": 4,
+          "description": "已加入“外卖保”计划,食品安全保障"
+        }
+      ],
+      "avatar": "http://static.galileo.xiaojukeji.com/static/tms/seller_avatar_256px.jpg",
+      "pics": [
+        "http://fuss10.elemecdn.com/8/71/c5cf5715740998d5040dda6e66abfjpeg.jpeg?imageView2/1/w/180/h/180",
+        "http://fuss10.elemecdn.com/b/6c/75bd250e5ba69868f3b1178afbda3jpeg.jpeg?imageView2/1/w/180/h/180",
+        "http://fuss10.elemecdn.com/f/96/3d608c5811bc2d902fc9ab9a5baa7jpeg.jpeg?imageView2/1/w/180/h/180",
+        "http://fuss10.elemecdn.com/6/ad/779f8620ff49f701cd4c58f6448b6jpeg.jpeg?imageView2/1/w/180/h/180"
+      ],
+      "infos": [
+        "该商家支持发票,请下单写好发票抬头",
+        "品类:其他菜系,包子粥店",
+        "北京市昌平区回龙观西大街龙观置业大厦底商B座102单元1340",
+        "营业时间:10:00-20:30"
+      ]
+    },
+    "books": [
+      {
+        "name": "HTML",
+        "image": "./html.c738f943.jpg",
+        "leftbgd":"background: rgb(134, 134, 130);",
+        "courseshort": "超文本标记语言",
+        "classdesc":"HTML称为超文本标记语言，是一种标识性的语言。它包括一系列标签．通过这些标签可以将网络上的文档格式统一，使分散的Internet资源连接为一个逻辑整体。HTML文本是由HTML命令组成的描述性文本，HTML命令可以说明文字，图形、动画、声音、表格、链接等。",
+        "coursetitle":"HTML：学习才刚刚开始",
+        "smalltitle":[{
+          "titleone":"HTML文本是由HTML命令组成的描述性文本",
+          "titletwo":"HTML是用来标记Web信息如何展示以及其他特性的一种语法规则",
+          "titlethree":"HTML命令可以说明文字，图形、动画、声音、表格、链接等"
+        }],
+        "bookimage":""
+      },
+      {
+        "name": "CSS",
+        "image": "./css.de8df75c.jpg",
+        "leftbgd":"background: rgb(23, 110, 74);",
+        "courseshort": "层叠样式表",
+        "classdesc":"层叠样式表是一种用来表现HTML或XML等文件样式的计算机语言。CSS不仅可以静态地修饰网页，还可以配合各种脚本语言动态地对网页各元素进行格式化。",
+        "coursetitle":"CSS：控制多重网页的样式和布局",
+        "smalltitle":[{
+          "titleone":"CSS 是编程入门人员的必修课，运用CSS样式可以让页面变得美观",
+          "titletwo":"CSS 是一种标记语言，属于浏览器解释型语言，可以直接由浏览器执行，不需要编译",
+          "titlethree":"CSS语法由三部分构成：选择器、属性和值： selector {property: value}"
+        }],
+        "bookimage":""
+      },
+      {
+        "name": "JavaScript",
+        "image": "./js.22d4c539.jpg",
+        "leftbgd":"background: rgb(0, 0, 0);",
+        "courseshort": "简称：JS",
+        "classdesc":"是一种具有函数优先的轻量级，解释型或即时编译型的编程语言。JavaScript 基于原型编程、多范式的动态脚本语言，并且支持面向对象、命令式和声明式（如函数式编程）风格。",
+        "coursetitle":"Javascript：为用户提供更流畅美观的浏览效果",
+        "smalltitle":[{
+          "titleone":"JavaScript 是 Web 的编程语言。",
+          "titletwo":"所有现代的 HTML 页面都使用 JavaScript",
+          "titlethree":"JavaScript实现网页的行为"
+        }],
+        "bookimage":""
+      },
+      {
+        "name": "JQuery",
+        "image": "./jquery.ebd781c7.jpg",
+        "leftbgd":"background: rgb(63, 100, 201);",
+        "courseshort": "JavaScript框架",
+        "classdesc":"是一个快速、简洁的JavaScript框架，运行jQuery所需的条件很简单：一台计算机、一个智能电话或一个可以运行现代浏览器的设备。jQuery对浏览器的要求也相当自由。",
+        "coursetitle":"JQuery：方便、简洁开发",
+        "smalltitle":[{
+          "titleone":"具有独特的链式语法和短小清晰的多功能接口",
+          "titletwo":"具有高效灵活的css选择器，并且可对CSS选择器进行扩展",
+          "titlethree":"拥有便捷的插件扩展机制和丰富的插件"
+        }],
+        "bookimage":""
+      },
+      {
+        "name": "BootStrap",
+        "image": "./bootstrap.72b37556.jpg",
+        "leftbgd":"background: rgb(51, 17, 66);",
+        "courseshort": "前端开发框架",
+        "classdesc":"是美国Twitter公司的设计师Mark Otto和Jacob Thornton合作基于HTML、CSS、JavaScript 开发的简洁、直观、强悍的前端开发框架，使得 Web 开发更加快捷。",
+        "coursetitle":"BootStrap：快速的搭建一个漂亮、功能完备的网站",
+        "smalltitle":[{
+          "titleone":"提供了优雅的HTML和CSS规范",
+          "titletwo":"提供了一个带有网格系统、链接样式、背景的基本结构",
+          "titlethree":"包含了十几个可重用的组件，用于创建图像、下拉菜单、导航、警告框、弹出框等等"
+        }],
+        "bookimage":""
+      },
+      {
+        "name": "webpack",
+        "image": "./webpack.jpg",
+        "leftbgd":"background: rgb(153, 155, 150);",
+        "courseshort": "模块化构建工具",
+        "classdesc":"本质上是一个现代JS应用程序的静态模块打包器（static module bundler）。在Webpack处理应用程序是，它会在内部创建一个依赖图（dependency graph），用映射到项目需要的每个模块，然后将所有这些依赖生成到一个或多个bundle。",
+        "coursetitle":"webpack：解决前端资源依赖管理问题",
+        "smalltitle":[{
+          "titleone":"像是从一套解决JS模块化依赖打包开始，利用强大的插件机制，逐渐解决前端资源依赖管理问题",
+          "titletwo":"依附社区力量逐渐进化成一套前端工程化解决方案",
+          "titlethree":"权衡研发效率和产品迭代的问题"
+        }],
+        "bookimage":""
+      }
+    ],
+    "asks": [
+      
+    ]
+  }

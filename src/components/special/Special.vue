@@ -33,7 +33,7 @@
     <div class="all-column">
       <div class="all-con">
         <ul>
-          <li>
+          <li v-for="(item, index) in books">
             <a href="">
               <img src="./test.jpg" alt="">
             </a>
@@ -66,7 +66,18 @@
   </div>
 </template>
 <script>
-
+import data from "../json/data.json"
+export default{
+  name: "special",
+  data () {
+    return {
+      books:[],
+    }
+  },
+  mounted () {
+    this.books = data.books
+  }
+}
 </script>
 <style lang="less">
 .special{
@@ -161,6 +172,9 @@
             width: 3500px;
             overflow: hidden;
             li{
+              position: absolute;
+              top: 0;
+              left: 0;
               list-style: none;
               float: left;
               width: 126px;
@@ -262,7 +276,7 @@
               color: #9199a1;
               width: 100%;
               height: auto;
-              margin-top: 14px;
+              margin-bottom: 14px;
               span{
                 font-size: 12px;
 

@@ -74,7 +74,7 @@ export default{
         this.solid = document.getElementsByClassName('solid')[0];
         this.btn = document.querySelectorAll('ol li');
         this.oUl = document.getElementsByClassName('oUl')[0];
-        this.css = document.getElementsByTagName('style')[4];
+        this.css = document.getElementsByTagName('style')[5];
         console.log(this.css);
         this.createDom();
     }

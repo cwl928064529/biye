@@ -1,60 +1,75 @@
 <template>
     <div class="systemLearning">
         <h2>从入门到精通</h2>
-        <div class="course-list-box">
-            <div class="box-left-courseInfo">
-                <div class="courseInfo-top">
-                    <img src="./webqd.jpg" alt="">
-                    <div class="vidio-btn">
-                        <i class="icon-play"></i>视频导学
+        <ul>
+            <li class="course-list-box" v-for="(item, index) in books">
+                <div class="box-left-courseInfo" :style="item.leftbgd">
+                    <div class="courseInfo-top">
+                        <img :src="item.image" alt="" class="vidiobgd">
+                        <div class="vidio-btn">
+                            <i class="icon-play"></i>视频导学
+                        </div>
+                    </div>
+                    <div class="courseInfo-bottom">
+                        <a href="" target="_black" class="cheader">
+                            <img src="./logo.png" alt="" class="header_img">
+                        </a>
+                        <div class="cinfo">
+                            <a href="" target="_black" class="coursename">{{item.name}}</a>
+                            <p class="courseshort">{{item.courseshort}}</p>
+                        </div>
+                        <p class="cdesc">{{item.classdesc}}</p>
+                        <a href="" target="_black" class="cmorebtn">
+                            了解更多
+                            <i class="icon-right"></i>
+                        </a>
                     </div>
                 </div>
-                <div class="courseInfo-bottom">
-                    <a href="" target="_black" class="cheader">
-                        <img src="./html.jpg" alt="" class="header_img">
-                    </a>
-                    <div class="cinfo">
-                        <a href="" target="_black" class="coursename">HTML</a>
-                        <p class="courseshort">超文本标记语言</p>
+                <div class="box-right-desc">
+                    <div class="content-box">
+                        <a href="" target="_black" class="bigtitle">{{item.coursetitle}}</a>
+                        <p class="smalltitle" v-for="(ptitle, i) in item.smalltitle">
+                            {{ptitle.titleone}}<br>
+                            {{ptitle.titletwo}}<br>
+                            {{ptitle.titlethree}}<br>
+                        </p>
                     </div>
-                    <p class="cdesc">HTML（HyperText Mark-up Language）是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言，它消除了不同计算机之间信息交流的障碍。HTML（HyperText Mark-up Language）是一种制作万维网页面的标准语言，是万维网浏览器使用的一种语言，它消除了不同计算机之间信息交流的障碍。</p>
-                    <a href="" target="_black" class="cmorebtn">
-                        了解更多
-                        <i class="icon-right"></i>
-                    </a>
-                </div>
-            </div>
-            <div class="box-right-desc">
-                <div class="content-box">
-                    <a href="" target="_black" class="bigtitle">Vue.js 2.5 + cube-ui 重构饿了么 App</a>
-                    <p class="smalltitle">
-                        Vue.js全版本(涵盖1.0，2.0，2.5),开发到部署全流程实战教学<br>
-                        在版本迭代中看透Vue的前世今生，在项目中感受Vue的优化提升<br>
-                        以外卖App商家页面为主线，融合核心业务模块，高仿饿了么
-                    </p>
-                </div>
-                <div class="loopover">
-                    <div class="loop-container">
-                        <div class="loop-active"></div>
+                    <div class="loopover">
+                        <div class="loop-container">
+                            <div class="loop-active"></div>
+                        </div>
+                    </div>
+                    <div class="more-box">
+                        <div class="oleft headerpic">
+                            <ul class="picitems">
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div class="oleft psum">
+                            <div class="sum">... 已经有999同学讨论</div>
+                        </div>
+                        <a href="" class="look-btn">立即查看</a>
                     </div>
                 </div>
-                <div class="more-box">
-                    <div class="oleft headerpic">
-                        <ul class="picitems">
-                            <li></li>
-                        </ul>
-                    </div>
-                    <div class="oleft psum">
-                        <div class="sum">... 已经有999同学讨论</div>
-                    </div>
-                    <a href="" class="look-btn">立即查看</a>
-                </div>
-            </div>
-        </div>
+            </li>
+        </ul>
     </div>
 </template>
 <script>
-
+import data from "../json/data.json"
+export default{
+    name: "syslearning",
+    data () {
+        return {
+            books:[],
+            
+        }
+    },
+    mounted () {
+        this.books = data.books
+        console.log(this.books)
+    }
+}
 </script>
 <style lang="less">
     .systemLearning{
@@ -72,7 +87,16 @@
         line-height: 68px;
         margin: 48px 0 36px;
     }
+    .systemLearning ul{
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+    }
     .systemLearning .course-list-box{
+        list-style: none;
+        width: 980px;
+        height: 486px;
         display: flex;
         margin-bottom: 24px;
         position: relative;
@@ -89,9 +113,11 @@
                 cursor: pointer;
                 overflow: hidden;
                 position: relative;
-                img{
-                    width: 300px;
-                    height: 168px;
+                height: 168px;
+
+                & .vidiobgd{
+                    min-width: 300px;
+                    min-height: 168px;
                 }
                 .vidio-btn{
                     position: absolute;
@@ -128,7 +154,10 @@
                 }
                 .cinfo{
                     padding: 12px 0 0 76px;
+                    color: #fff;
+
                     .coursename{
+                        color: #fff;
                         font-size: 16px;
                         height: 24px;
                         display: inline-block;
@@ -139,6 +168,7 @@
                     }
                 }
                 .cdesc{
+                    color: #fff;
                     margin-top: 26px;
                     font-size: 12px;
                     line-height: 24px;
@@ -150,6 +180,7 @@
                     -webkit-box-orient: vertical;/* 该属性定义父元素的子元素是垂直排列的 */
                 }
                 .cmorebtn{
+                    color: #fff;
                     font-size: 12px;
                     margin-top: 20px;
                     line-height: 24px;
@@ -183,7 +214,7 @@
             }
             .loopover{
                 position: absolute;
-                bottom: -145px;
+                top: 200px;
                 width: 584px;
                 border: 1px solid #eee;
                 .loop-container{
@@ -201,7 +232,7 @@
             .more-box{
                 position: absolute;
                 margin: auto;
-                bottom: -230px;
+                bottom: 40px;
                 height: 50px;
                 width: 586px;
                 /* display: inline-block; */
